@@ -1,0 +1,20 @@
+<p>{{homeTitle}}</p>
+
+<input [value]="myString"><br>
+<input [required]="myBoolean"><br>
+<button (click)="alertMe('I like beef')" class="btn btn-info">Click!</button><br>
+
+<input type="text" [(ngModel)]="ninja.name" /><br>
+<input type="text" [(ngModel)]="ninja.belt" /><br>
+<input type="text" [(ngModel)]="ninja.age" (change)="update($event)"/><br>
+
+<label>
+  <select class="" name="">
+    <option value="aaaaa">aaaa</option>
+    <option value="aaaaa">aaaa</option>
+  </select>
+</label>
+
+<button type="button" name="button" (click)="save()">Save</button>
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>

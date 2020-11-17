@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Basic List Group</h2>
+  <button type="button" class="btn btn-success" (click)="addItem()">Add item</button>
+
+  <ul class="list-group" *ngIf="listGroupArray">
+    <li class="list-group-item" *ngFor="let value of listGroupArray">
+      {{value}}
+    </li>
+  </ul>
+</div>
