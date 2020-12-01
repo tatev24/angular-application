@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "my-dream-app"
+  "defaultProject": "my-dream-app",
+  "cli": {
+    "analytics": "07dad568-6359-44fb-bf18-cd3addaa772d"
+  }
 }

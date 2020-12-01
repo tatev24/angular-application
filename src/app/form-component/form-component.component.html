@@ -1,0 +1,16 @@
+<form class="form-horizontal">
+  <div class="displ-class form-group">
+    <label class="control-label col-sm-2" for="name">Name:</label>
+    <input type="text" class="form-control" name='name' id="name" [(ngModel)]="ninja.name">
+  </div>
+  <div class="displ-class form-group">
+    <label class="control-label col-sm-2" for="age">Age:</label>
+    <input type="number" class="form-control" name='age' id="age" [(ngModel)]="ninja.age">
+  </div>
+  <div class="displ-class form-group">
+    <label  class="control-label col-sm-2" for="color">Color:</label>
+    <input type="color" class="form-control" name="color" id="color" [(ngModel)]="ninja.color">
+  </div>
+  <button type="submit" class="btn btn-default" (click)="arrayFunc()">Submit</button>
+  <button class="btn btn-info" (click)="fireYellEvent($event)" style="margin: 10px">Click me</button>
+</form>

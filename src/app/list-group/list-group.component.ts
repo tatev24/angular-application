@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-list-group',
@@ -6,20 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-group.component.css']
 })
 export class ListGroupComponent implements OnInit {
-
-  listValue: string = "Item 1";
-  listGroupArray = ["007 Item", "008 Item"];
+  @Input() ninjas;
   constructor() { }
 
   ngOnInit(): void {
-
-  }
-
-  addItem(){
-    let randomNumber = Math.floor(Math.random() * 1000);
-    let value = randomNumber + " Item";
-    this.listGroupArray.push(value);
-
-    console.log('WOW', this.listGroupArray);
+    console.log(this.ninjas);
   }
 }

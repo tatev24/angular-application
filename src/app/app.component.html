@@ -1,13 +1,7 @@
 <div class="container">
   <h2>Welcome {{title}}</h2>
 
-  <div class="btn btn-primary" (click)="changeTitle('John')">
-    Click
-  </div>
+  <app-form-component [ninja]="ninja" (createNewNinja)="create($event)" (onYell)="yell($event)"></app-form-component>
 
-  <app-incement-decrement></app-incement-decrement>
-
-  <app-list-group></app-list-group>
-
-  <app-home></app-home>
+  <app-list-group [ninjas]="ninjas"></app-list-group>
 </div>

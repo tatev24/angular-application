@@ -1,10 +1,9 @@
 <div class="container">
-  <h2>Basic List Group</h2>
-  <button type="button" class="btn btn-success" (click)="addItem()">Add item</button>
+  <h2>Ninjas List Group</h2>
 
-  <ul class="list-group" *ngIf="listGroupArray">
-    <li class="list-group-item" *ngFor="let value of listGroupArray">
-      {{value}}
+  <ul class="list-group" *ngIf="ninjas">
+    <li class="list-group-item" *ngFor="let ninja of ninjas" [ngStyle]="{'background-color': ninja.color}">
+      {{ninja.name}} - {{ninja.age}}
     </li>
   </ul>
 </div>

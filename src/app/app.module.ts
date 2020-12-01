@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { IncementDecrementComponent } from './incement-decrement/incement-decrement.component';
 import { ListGroupComponent } from './list-group/list-group.component';
 import { HomeComponent } from './home/home.component';
+import { FormComponentComponent } from './form-component/form-component.component';
+import { TrainingComponent } from './training/training.component';
+import { DirectoryComponent } from './directory/directory.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
     AppComponent,
     IncementDecrementComponent,
     ListGroupComponent,
-    HomeComponent
+    HomeComponent,
+    FormComponentComponent,
+    TrainingComponent,
+    DirectoryComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
